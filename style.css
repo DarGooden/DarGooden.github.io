@@ -1,11 +1,11 @@
 body {
-    background: rgb(43, 78, 33);
+    background-image: url("https://j.gifs.com/vQJxxY.gif");
     color: rgb(0, 0, 0);
     padding: 10px;
     font-family: fantasy;
 }
 #all-contents {
-  max-width: 800px;
+  max-width: 700px;
     margin: auto;
 }
 
@@ -14,7 +14,7 @@ nav {
     background: rgb(12, 4, 2);
    margin: 0 auto;
     display: flex;
-    padding: 10px;
+    padding: 1px;
 }
 h1 {
     display: flex;
@@ -72,7 +72,7 @@ h2, h3 {
 }
 
 #portfolio li {
-    background: rgb(63, 12, 12);
+    background-image: url("My Drawing!.jpg");;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
