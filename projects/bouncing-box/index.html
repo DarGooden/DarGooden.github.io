@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Bouncing Box</title>
@@ -8,42 +9,47 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: rgb(201, 70, 47);
+			background-color: #a0671d0a;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 0px;
+			/* <--- Change me! */
 		}
-		.board{
+
+		.board {
 			height: 100vh;
+			background: -webkit-linear-gradient(#300f0f, #333);
+			
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
+
 <body class="board">
 	<!-- HTML for the box -->
 	<div class="box">?</div>
 
 	<script>
-		(function(){
+		(function () {
 			'use strict'
 			/* global jQuery */
 
 			//////////////////////////////////////////////////////////////////
 			/////////////////// SETUP DO NOT DELETE //////////////////////////
 			//////////////////////////////////////////////////////////////////
-			
+
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
-			
+
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 
@@ -60,27 +66,29 @@
 			//////////////////////////////////////////////////////////////////
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
 			//////////////////////////////////////////////////////////////////
-			
+
 			// TODO 2 - Variable declarations 
 			var positionX = 0
 			var points = 0
-			var speed = 1 
-			var positionY = 0
-			
+			var speed = 1
+			var position
+
+
+
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			
+
 			function update() {
 				positionX = positionX + speed
-				moveBoxTo(positionX); 
+				moveBoxTo(positionX);
 				if (positionX > boardWidth) {
-					speed = speed *-1
+					speed = speed * -1
 				}
 				if (positionX < 0) {
-					speed = speed *-1
+					speed = speed * -1
 				}
 			};
 
@@ -90,8 +98,8 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-			positionX = 0
-			points = points + 1;	
+				positionX = 0
+				points = points + 1;
 				changeBoxText(points);
 				speed = speed + 1
 
@@ -100,4 +108,5 @@
 		})();
 	</script>
 </body>
+
 </html>
