@@ -1,21 +1,42 @@
 
 body {
-  background-color: darkgreen;
+  color: rgb(0, 0, 0);
+  background-image: url("BackgroundForWalker.png");;
+  background-repeat: no-repeat;
+  background-size: 101%;
+ 
 }
 
 #board {
-  width: 440px;
-  height: 440px;
-  border: 1px solid white;
+  width: 600px;
+  height: 500px;
+  border: 1px solid rgb(5, 45, 101);
   background-color: black;
   position: relative;
+  left: 450px;
+  top: 90px;
+ 
 }
 
-#gameItem {
-  background-color: teal;
+#walker {
+  background-image: url("https://j.gifs.com/vQJxxY.gif");
   width: 50px;
   height: 50px;
+  border-radius: 30px;
   position: absolute;
-/*   left: 100px; */  /* Uncomment if you want to set a "starting" position */
-/*   top: 100px;  */  /* Uncomment if you want to set a "starting" position */
+   left: 100px;
+   top: 100px;  
 }
+
+
+#Runner {
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/863978359497021930/0F234E55780F4D7B02A8D45ACA3D384CD1ADFD1D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  position: absolute;
+   left: 550px;
+   top: 0px;  
+}
+
+
