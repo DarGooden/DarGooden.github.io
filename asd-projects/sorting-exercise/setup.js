@@ -97,7 +97,7 @@ function generateList(list, listId, cssClass, baseId){
     }
 }
 
-// choose a "random" index
+// choose a "random" index......
 function chooseIndex(startIndex, array){
     return (startIndex * FACTOR + INCREASE) % array.length;
 }
@@ -119,7 +119,7 @@ function createAndAddElement(list, listId, cssClass, baseId, value){
               .appendTo(listId);
 }
 
-// factory function for elements
+// factory function for elements.....
 function makeElement(id, value){
     return {
         id: "#" + id,

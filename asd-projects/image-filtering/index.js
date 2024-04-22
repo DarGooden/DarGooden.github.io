@@ -34,7 +34,7 @@ function applyAndRender() {
   // applyFilter(increaseGreenByBlue)
   applyFilterNoBackground(reddify)
   applyFilterNoBackground(decreaseBlue)
-  applyFilterNoBackground(increaseGreenByBlue)
+  applyFilterNoBackground(increaeGreenByBlue)
 
 
 
@@ -42,6 +42,7 @@ function applyAndRender() {
   // do not change the below line of code
   render($("#display"), image);
 }
+
 
 
 
